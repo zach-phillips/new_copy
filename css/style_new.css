@@ -40,6 +40,7 @@ main {
 .skip:hover {
 	text-decoration: underline;
 	color: blue;
+	left: 0px;
 }
 
 div > div {
@@ -197,13 +198,20 @@ footer {
 a.skip {
 	background: white;
 	color: black;
-    padding: 6px;
+    padding: 16px;
+	margin: 5px;
     -webkit-transition: top 1s ease-out;
     transition: left 1s ease-out;
     z-index: 1;
     position: absolute;
     left: -500px;
-}	
+}
+.skip:focus {
+    left: 0px;
+	outline: none;
+  }
+
+  
 
 .grid {
 	display: grid;
