@@ -282,33 +282,28 @@ a.skip {
 	margin: 8px;
 	display: none;
 
-  
+	animation: attract_attention 2s linear /*speed*/ 3;
 	
-  }
-
-  .flip-card {
-	animation: wiggle 2s linear 3;
-  }
-  
-  /* Keyframes */
-  @keyframes wiggle {
+  }  
+ 
+  @keyframes attract_attention {
 	0%, 7% {
 	  transform: rotateZ(0);
 	}
 	15% {
-	  transform: rotateZ(-15deg);
+	  transform: rotateZ(-12deg);
 	}
 	20% {
-	  transform: rotateZ(10deg);
+	  transform: rotateZ(8deg);
 	}
 	25% {
-	  transform: rotateZ(-10deg);
+	  transform: rotateZ(-8deg);
 	}
 	30% {
-	  transform: rotateZ(6deg);
+	  transform: rotateZ(4deg);
 	}
 	35% {
-	  transform: rotateZ(-4deg);
+	  transform: rotateZ(-2deg);
 	}
 	40%, 100% {
 	  transform: rotateZ(0);
