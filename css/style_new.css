@@ -394,6 +394,35 @@ fieldset {
 	width: 100%;
 }
 
+.item {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+  }
+  
+  .item a {
+	position: relative;
+	transition: all .35s ease-Out;
+  }
+  
+  #slide {
+	width: 100%;
+	height: 100%;
+	left: -200px;
+	background: black;
+	position: absolute;
+	transition: all .35s ease-Out;
+	bottom: 0;
+  }
+  
+  .item:hover #slide {
+	left: 0;
+  }
+  
+  .item:hover a {
+	color: white;
+  }
+  
   @media screen and (min-width: 830px){
 	nav {
 		padding-top: 80px;
@@ -452,34 +481,3 @@ fieldset {
 		display: none;
 	}
 }
-
-
-.item {
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-  }
-  
-  .item a {
-	position: relative;
-	transition: all .35s ease-Out;
-  }
-  
-  #slide {
-	width: 100%;
-	height: 100%;
-	left: -200px;
-	background: black;
-	position: absolute;
-	transition: all .35s ease-Out;
-	bottom: 0;
-  }
-  
-  .item:hover #slide {
-	left: 0;
-  }
-  
-  .item:hover a {
-	color: white;
-  }
-  
