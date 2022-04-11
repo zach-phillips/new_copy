@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<title>10Best: Efficiency</title>
 </head>
-<body>
+<body onkeypress="myFunction()">
 	<a class="skip" href="#main-here">Skip to Main Content</a>
 	<header>
 		<div class="flip-card">
@@ -122,6 +122,25 @@
 		</div>
 	</main>
 	<footer>
+		<ul class="menu">
+			<li class="item not_needed"><div id="slide"></div><a href = "contact_us.html" class="navlink">Contact Us</a></li>
+			<li class="item"><div id="slide"></div><a id="button" class="navlink" onclick="myFunction2()">Accessibility</a></li>
+		</ul>
 	</footer>
+	<script>
+		function myFunction() {
+			//var selection = document.getElementById('page');
+			//selection.style['filter'] = invert(1);
+			if (document.querySelector("html").style.filter == "invert(1)") {
+				document.querySelector("html").style.filter = "invert(0)";
+			}
+			else {
+				document.querySelector("html").style.filter = "invert(1)"
+			}
+		}
+		function myFunction2() {
+		alert("Press any key to invert colors");
+	}
+	</script>
 </body>
 </html>

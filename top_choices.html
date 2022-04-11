@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 
 
 </head>
-<body>
+<body onkeypress="myFunction()">
 	<a class="skip" href="#main-here">Skip to Main Content</a>
 	<header>
 		<div class="flip-card">
@@ -230,10 +230,23 @@
 	</main>
 		<footer>
 			<ul class="menu">
-				<li class="item"><a href = "contact_us.html" class="navlink">Contact Us</a></li>
+				<li class="item not_needed"><div id="slide"></div><a href = "contact_us.html" class="navlink">Contact Us</a></li>
+				<li class="item"><div id="slide"></div><a id="button" class="navlink" onclick="myFunction2()">Accessibility</a></li>
 			</ul>
 		</footer>
 	
-	
+<script>
+	function myFunction() {
+		if (document.querySelector("html").style.filter == "invert(1)") {
+			document.querySelector("html").style.filter = "invert(0)";
+		}
+		else {
+			document.querySelector("html").style.filter = "invert(1)"
+		}
+	}
+	function myFunction2() {
+		alert("Press any key to invert colors");
+	}
+</script>
 </body>
 </html>

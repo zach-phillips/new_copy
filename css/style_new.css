@@ -2,7 +2,7 @@ html {
 	background-color: black;
 	color: white;
 	/*;*/
-	
+	filter: invert(0);
 	background-size: auto auto;
 	background-repeat: repeat-y;
 	background-attachment: fixed;
@@ -418,9 +418,11 @@ fieldset {
 		display: block;
 	}
 	footer {
-		display: none;
+		display: block;
 	}
-	
+	.not_needed {
+		display:none;
+	}
 }
 @media screen and (min-width: 1150px){
 	nav {
@@ -444,6 +446,9 @@ fieldset {
 		justify-content: end;
 	}
 	footer {
+		display: block;
+	}
+	.not_needed {
 		display: none;
 	}
 }
