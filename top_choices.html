@@ -21,12 +21,47 @@
 <body>
 	<a class="skip" href="#main-here">Skip to Main Content</a>
 	<header>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+			  <div class="flip-card-front">
+				<h2 class='flip-img'>Contact Us</h2>
+			  </div>
+			  <div class="flip-card-back">
+				<form action="https://formspree.io/f/xayvbjbo" method="POST">
+					<fieldset>
+						<br>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name">
+						<br><br>
+			
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+						<br><br>
+			
+						<label for="number">Phone Number</label>
+						<input type="tel" name="number" id="number">
+						<br><br>
+			
+						<label for="msg">Message</label>
+						<textarea id="msg" name="msg" rows="1"></textarea>
+						<br><br>
+			
+						<section class="submission">
+						<input type="submit" value="Submit">
+						</section>
+					</fieldset>
+					</form> 
+			  </div>
+			</div>
+		  </div>
 		<nav class="grid">
+			
 			<ul>
+				
 				<li class="item_active"><a href = "top_choices.html" class="activenavlink">Best Choices</a></li>
-				<li class="item"><a href = "most_efficient.html" class="navlink">Most Efficient</a></li>
-				<li class="item"><a href = "top_sellers.html" class="navlink">Top Sellers</a></li>
-				<li class="item"><a href = "safest.html" class="navlink">Safest</a></li>
+				<li class="item"><div id="slide"></div><a href = "most_efficient.html" class="navlink">Most Efficient</a></li>
+				<li class="item"><div id="slide"></div><a href = "top_sellers.html" class="navlink">Top Sellers</a></li>
+				<li class="item"><div id="slide"></div><a href = "safest.html" class="navlink">Safest</a></li>
 			</ul>
 		</nav>
 		<h1 class="page_title">10Best: Overall</h1>
@@ -35,19 +70,7 @@
 	<main id="main-here" tabindex="-1">
 		<div class="container">
 			<div>
-
-
-				
-
-
-
-
 				<a class="example-image-link" href="images/vw_gti.jpeg" data-lightbox="image-1" data-title="Volkswagen GTI"><img class="example-image" src = "images/vw_gti.jpeg" alt="Volkswagen GTI" width="200"/></a>
-
-
-		
-
-
 				<p class="name">Volkswagen GTI</p>
 				<p>
 			Fears that Volkswagen would annihilate the entire Golf lineup are all but forsaken, 
@@ -65,7 +88,9 @@
 			
 			</div>
 			<div>
+				
 				<img src = "images/porsche_911.jpeg" alt="Porsche 911" width="200"/>
+
 				<p class="name">Porsche 911</p>
 				<p>
 			With transcendent driving traits and terrific twin-turbo flat-six engines, the 2022 Porsche 
@@ -203,8 +228,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="dist/js/lightbox.js"></script>
 	</main>
-	<footer>
-	</footer>
+		<footer>
+			<ul class="menu">
+				<li class="item"><a href = "contact_us.html" class="navlink">Contact Us</a></li>
+			</ul>
+		</footer>
 	
 	
 </body>

@@ -14,12 +14,45 @@
 <body>
 	<a class="skip" href="#main-here">Skip to Main Content</a>
 	<header>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+			  <div class="flip-card-front">
+				<h2 class='flip-img'>Contact Us</h2>
+			  </div>
+			  <div class="flip-card-back">
+				<form action="https://formspree.io/f/xayvbjbo" method="POST">
+					<fieldset>
+						<br>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name">
+						<br><br>
+			
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+						<br><br>
+			
+						<label for="number">Phone Number</label>
+						<input type="tel" name="number" id="number">
+						<br><br>
+			
+						<label for="msg">Message</label>
+						<textarea id="msg" name="msg" rows="1"></textarea>
+						<br><br>
+			
+						<section class="submission">
+						<input type="submit" value="Submit">
+						</section>
+					</fieldset>
+					</form> 
+			  </div>
+			</div>
+		  </div>
 		<nav class="grid">
 			<ul>
-				<li class="item"><a href = "top_choices.html" class="navlink">Best Choices</a></li>
+				<li class="item"><div id="slide"></div><a href = "top_choices.html" class="navlink">Best Choices</a></li>
 				<li class="item_active"><a href = "most_efficient.html" class="activenavlink">Most Efficient</a></li>
-				<li class="item"><a href = "top_sellers.html" class="navlink">Top Sellers</a></li>
-				<li class="item"><a href = "safest.html" class="navlink">Safest</a></li>
+				<li class="item"><div id="slide"></div><a href = "top_sellers.html" class="navlink">Top Sellers</a></li>
+				<li class="item"><div id="slide"></div><a href = "safest.html" class="navlink">Safest</a></li>
 			</ul>
 		</nav>
 		<h1 class="page_title">10Best: Efficiency</h1>
