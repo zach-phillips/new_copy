@@ -405,7 +405,6 @@ fieldset {
   img {
 	  max-height: 100%;
 	  max-width: 100%;
-	  min-height: 259.53px;
   }
 
 
@@ -492,3 +491,10 @@ fieldset {
 		display: none;
 	}
 }
+img {
+    float: none;
+
+    height: 100px;
+    
+}
+
