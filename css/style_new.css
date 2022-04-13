@@ -9,17 +9,34 @@ html {
 	
 	font-family: 'Montserrat', sans-serif;
 }
+/*
 nav {
 	background-image: url("../images/roadway.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
+*/
+body {
+	background-image: url("../images/roadway.jpeg");
+	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 
-
+}
 h1 {
 	font-size: 2em; 
 	font-weight: bold;
+	
+}
+#car {
+	background-color: black !important;
 }
 
 main {
@@ -46,7 +63,7 @@ main {
 
 div > div {
 	height: 100%;
-	width: 370px;
+	max-width: 370px;
 	border: 1px solid white;
 	margin: 5px 5px;
 	
@@ -57,7 +74,7 @@ img{
     min-height: 50%;
     min-width: 85%;
     padding: 25px;
-	margin: 10px;
+	
 	object-fit: cover;
 	border-radius: 10px;
 	/*transform: scale(1.20);*/
@@ -150,7 +167,7 @@ h1 {
 
 .activenavlink {
 	color: white;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .activenavlink:hover {
@@ -206,8 +223,7 @@ a.skip {
 	flex-flow: row wrap;
 	justify-content: center;
 	width: 100%;
-	margin: 0;
-	margin: -5px -5px;
+	
 	
 }
 .contact {
@@ -305,7 +321,7 @@ a.skip {
 	margin: 0;
   }
   
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner {
 	transform: rotateY(180deg);
   }
 
@@ -431,7 +447,22 @@ fieldset {
 	#slide {
 		transition: all 0s ease-Out;
 	}
+	body {
+		background-attachment: scroll;
+	}
 
+  }
+  #spacer_mid {
+	  display: none;
+  }
+ #spacer {
+	 display: block;
+	 
+ }
+  
+  #grid_div {
+	  background-color: black;
+	  overflow: scroll;
   }
 
   @media screen and (min-width: 830px){
@@ -441,7 +472,7 @@ fieldset {
 
 	
 	.griddivs {
-		grid-template-columns: auto auto;
+		grid-template-columns: 50% 50%;
 	}
 	.grid {
 		/*grid-template-columns: auto auto auto auto;*/
@@ -458,6 +489,22 @@ fieldset {
 	}
 	.not_needed {
 		display:none;
+	}
+	#grid_div {
+		border: 0px;
+		background-color: black;
+		height: 135%;
+		overflow: scroll;
+		
+	}
+	#spacer {
+		display:none;
+	}
+	#spacer_mid {
+		display: block;
+		width: 100%;
+		border: none;
+		overflow: none;
 	}
 }
 @media screen and (min-width: 1150px){
@@ -478,18 +525,23 @@ fieldset {
 		grid-template-columns: auto auto auto;
 		
 	}
-	.flip-card {
+	#grid_div {
+		border: 0px;
+		background-color: black;
+		height: 135%;
+		overflow: scroll;
+		
+	}
+	#spacer {
+		border: 0px;
 		display: block;
 	}
-	.grid {
-		justify-content: end;
-	}
-	footer {
-		display: block;
-	}
-	.not_needed {
+	#spacer_mid {
 		display: none;
 	}
+
+	
+
 }
 img {
     float: none;

@@ -11,6 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<title>10Best: Safest</title>
+
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
 </head>
 <body onkeypress="myFunction()">
 	<a class="skip" href="#main-here">Skip to Main Content</a>
@@ -60,8 +62,8 @@
 	</header>
 	<main id="main-here" tabindex="-1">
 		<div class="container">
-		<div>
-			<img src = "images/vw_gti.jpeg" alt="Volkswagen GTI" width="200"/>
+		<div id="car">
+			<a class="example-image-link" href="images/vw_gti_new.jpeg" data-lightbox="image-1" data-title="Volkswagen GTI"><img class="example-image" src = "images/vw_gti_new.jpeg" alt="Volkswagen GTI" width="200"/></a>
 			<p class="name">Volkswagen GTI</p>
 			<p>
 			Fears that Volkswagen would annihilate the entire Golf lineup are all but forsaken, 
@@ -72,13 +74,12 @@
 			and the same characteristics that helped the outgoing version earn our love and affection.
 			The new infotainment, while incredibly convoluted and in dire need of updates, is undoubtedly 
 			impressive. With more modern styling inside and out as well as the familiar fantastic-to-drive 
-			behavior, the reborn Golf GTI attracts new enthusiasts, continues to reward the faithful, and 
-			again makes our 10Best and Editors' Choice lists.
+			behavior, the reborn Golf GTI attracts new enthusiasts, rewards the faithful, and 
+			again makes our 10Best list.
 			</p>
 		</div>
-		<div id="spacer"></div>
-		<div>
-			<img src = "images/porsche_911.jpeg" alt="Porsche 911" width="200"/>
+		<div id="car">
+			<a class="example-image-link" href="images/porsche_911.jpeg" data-lightbox="image-1" data-title="Porsche 911"><img class="example-image" src = "images/porsche_911.jpeg" alt="Porsche 911" width="200"/></a>
 			<p class="name">Porsche 911</p>
 			<p>
 			With transcendent driving traits and terrific twin-turbo flat-six engines, the 2022 Porsche 
@@ -92,9 +93,8 @@
 			steering feel. Its interior is roomy up front and can be lavishly appointed.	
 			</p>
 		</div>
-		<div id="spacer"></div>
-        <div>
-			<img src = "images/range_rover_velar.jpeg" alt="Range Rover Velar" width="200"/>
+        <div id="car">
+			<a class="example-image-link" href="images/range_rover_velar.jpeg" data-lightbox="image-1" data-title="Range Rover Velar"><img class="example-image" src = "images/range_rover_velar.jpeg" alt="Range Rover Velar" width="200"/></a>
 			<p class="name">Range Rover Velar</p>
 			<p>
 			The 2022 Range Rover Velar is Land Rover's style-focused compact SUV, and it also earns its place 
@@ -107,9 +107,8 @@
 			from occasional hiccups, though those are expected to be addressed in future system updates. 
 			</p>
 		</div>
-		<div id="spacer"></div>
-        <div>
-			<img src = "images/audi_a6.jpeg" alt="Audi A6" width="200"/>
+        <div id="car">
+			<a class="example-image-link" href="images/audi_a6.jpeg" data-lightbox="image-1" data-title="Audi A6"><img class="example-image" src = "images/audi_a6.jpeg" alt="Audi A6" width="200"/></a>
 			<p class="name">Audi A6</p>
 			<p>
 			As luxury sedans go, the 2022 Audi A6 is a smart choice that impresses with its high-tech features, 
@@ -124,6 +123,8 @@
 			</p>
 		</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="dist/js/lightbox.js"></script>
 	</main>
 	<footer>
 		<ul class="menu">
