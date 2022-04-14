@@ -450,6 +450,10 @@ fieldset {
 	body {
 		background-attachment: scroll;
 	}
+	a.skip {
+		-webkit-transition: top 0s ease-out;
+    	transition: left 0s ease-out;
+	}
 
   }
   #spacer_mid {
